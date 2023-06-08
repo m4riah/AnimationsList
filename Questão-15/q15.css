@@ -1,0 +1,40 @@
+.ball {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #1fd6ca;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    animation: quicar 5s linear infinite alternate;
+}
+  
+  @keyframes quicar {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(200px) translateY(-100px);
+    }
+    50% {
+      transform: translateX(400px) translateY(0);
+    }
+    75% {
+      transform: translateX(600px) translateY(-100px);
+    }
+    100% {
+      transform: translateX(800px) translateY(0);
+    }
+}
+
+.return {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.return img {
+  width: 40px;
+  height: 40px;
+}

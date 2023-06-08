@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#00b5b9;
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #57c5c7;
+}
+
+.box:hover {
+    background-color:#dddd92;
+}
+
+.return {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.return img {
+    width: 40px;
+    height: 40px;
+}

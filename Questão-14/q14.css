@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+.ball {
+    width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #43fd1d;
+  transition: all 0.5s ease;
+}
+
+.ball:hover {
+    width: 200px;
+  height: 100px;
+  border-radius: 0;
+}
+
+.return {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.return img {
+  width: 40px;
+  height: 40px;
+}

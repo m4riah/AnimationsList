@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color:#f89fa1;
+    animation-name: turnbox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes  turnbox {
+    0%{
+    transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+.return {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.return img {
+    width: 40px;
+    height: 40px;
+}

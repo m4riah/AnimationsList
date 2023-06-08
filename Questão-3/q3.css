@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: #fad6d6;
+    animation-name: boxright;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes boxright {
+    0%{
+    transform: translateX(0);
+      }
+    100%{
+    transform: translateX(500px);
+    }
+}
+.return {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.return img {
+    width: 40px;
+    height: 40px;
+}

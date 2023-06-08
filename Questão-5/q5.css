@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: #5015bd;
+    animation-name: rgb;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: backgroud-color 0.5ms backgroud-color 0.5ms;
+}
+@keyframes  rgb {
+    0%{
+    transform: rotate(0deg);
+        background-color: #fefcd0 ;
+   }
+      12.5% {
+        background-color: #fad6d6;
+    }
+      25% {
+        background-color: #addfd3;
+    }
+      37.5% {
+        background-color: #badb73;
+    }
+      50% {
+        background-color: #88c3b5;
+    }
+      62.5% {
+        background-color: #f58f9a;
+    }
+      75% {
+        background-color: #cfbdbf;
+    }
+     87.5% {
+        background-color: #96b5ad;
+    }
+      100% {
+        transform: rotate(45deg);
+        background-color: #c7b9c5;
+   }
+}
+
+.return {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.return img {
+  width: 40px;
+  height: 40px;
+}

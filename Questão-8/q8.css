@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.ball{
+    height: 200px;
+    width: 200px;
+    background-color: #50c8c6;
+    animation-name: Q9;
+    animation: Q9 3s 3 alternate;
+    border-radius: 50%;
+}
+@keyframes Q9 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+        background-color: #e1f5c4;
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+.return {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.return img {
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1) rotate(0deg)
+    }
+    50% {
+      transform: scale(1.5) rotate(180deg)
+    }
+    100% {
+      transform: scale(1) rotate(360deg)
+    }
+  }
+  
+.ball {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: pulse 2s  infinite;
+  }
+
+  .return {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.return img {
+    width: 40px;
+    height: 40px;
+}
